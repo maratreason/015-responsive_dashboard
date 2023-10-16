@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 12px;
+}
+
+body {
+    min-height: 100vh;
+    font-family: poppins, sans-serif;
+    background: var(--color-light);
+    color: var(--color-dark);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 96%;
+    margin: 0 auto;
+}
+
+a {
+    color: var(--color-dark);
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+h5 {
+    font-size: 0.86rem;
+    font-weight: 500;
+}
+
+h6 {
+    font-size: 0.76rem;
+}
+
+small {
+    font-size: 0.77rem;
+    font-weight: 300;
+}
+
+.profile-photo {
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.text-muted {
+    color: var(--color-gray-light);
+}
+
+p {
+    color: var(--color-gray-dark);
+    font-size: 0.86rem;
+}
+
+b {
+    color: var(--color-dark);
+}
+
+.primary {
+    color: var(--color-primary) !important;
+}
+
+.danger {
+    color: var(--color-danger) !important;
+}
+
+.success {
+    color: var(--color-success) !important;
+}
+
+.warning {
+    color: var(--color-warning) !important;
+}
+
+.purple {
+    color: var(--color-purple) !important;
+}
+
+.bg-primary {
+    background: var(--color-primary) !important;
+    box-shadow: 0 0.8rem 0.8rem var(--color-primary-light);
+}
+
+.bg-danger {
+    background: var(--color-danger) !important;
+    box-shadow: 0 0.8rem 0.8rem var(--color-danger-light);
+}
+
+.bg-success {
+    background: var(--color-success) !important;
+    box-shadow: 0 0.8rem 0.8rem var(--color-success-light);
+}
+
+.bg-purple {
+    background: var(--color-purple) !important;
+    box-shadow: 0 0.8rem 0.8rem var(--color-purple-light);
+}
+
+.bg-dark {
+    background: var(--color-dark);
+    box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.2);
+}
+
+.bg-purple-light {
+    background: var(--color-purple-light) !important;
+}
+
+.bg-danger-light {
+    background: var(--color-danger-light) !important;
+}
+
+.bg-primary-light {
+    background: var(--color-primary-light) !important;
+}
+
+.bg-success-light {
+    background: var(--color-success-light) !important;
+}
+
+.material-symbols-sharp {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 500,
+    'GRAD' 0,
+    'opsz' 48
+  }

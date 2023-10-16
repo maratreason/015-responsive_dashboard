@@ -1,0 +1,361 @@
+extends pug/base
+
+append content
+    nav
+        .container
+            img.logo(src="./images/logo.png", alt="logo")
+            .search-bar
+                span.material-icons-sharp search
+                input(type="search" placeholder="Search")
+            .profile-area
+                .theme-btn
+                    span.material-icons-sharp.active light_mode
+                    span.material-icons-sharp dark_mode
+                .profile
+                    .profile-photo
+                        img(src="./images/profile-1.jpg", alt="profile image")
+                    h5 Mark Johnson
+                    span.material-icons-sharp expand_more
+                button.menu-btn
+                    span.material-icons-sharp menu
+
+    main
+        aside
+            button.close-btn
+                span.material-icons-sharp close
+
+            .sidebar
+                a.active(href="#")
+                    span.material-icons-sharp dashboard
+                    h4 Dashboard
+                a(href="#")
+                    span.material-icons-sharp currency_exchange
+                    h4 Exchange
+                a(href="#")
+                    span.material-icons-sharp account_balance_wallet
+                    h4 Wallet
+                a(href="#")
+                    span.material-icons-sharp payment
+                    h4 Transactions
+                a(href="#")
+                    span.material-icons-sharp pie_chart
+                    h4 Analytics
+                a(href="#")
+                    span.material-icons-sharp message
+                    h4 Messages
+                a(href="#")
+                    span.material-icons-sharp help_center
+                    h4 Help Center
+                a(href="#")
+                    span.material-icons-sharp settings
+                    h4 Settings
+
+            .updates
+                span.material-icons-sharp update
+                h4 Updates Available
+                p Security Updates
+                p General Updates
+                a(href="#") Update Now
+
+        section.middle
+            .header
+                h1 Overview
+                input(type="date")
+
+            .cards
+                .card
+                    .top
+                        .left
+                            img(src="./images/BTC.png", alt="btc")
+                            h2 BTC
+                        img.right(src="./images/visa.png", alt="visa")
+                    .middle
+                        h1 $827,199
+                        .chip
+                            img(src="./images/card_chip.png", alt="card chip")
+                    .bottom
+                        .left
+                            small Card Holder
+                            h5 John Doe
+                        .right
+                            .expiry
+                                small Expiry
+                                h5 08/23
+                            .cvv
+                                small CVV
+                                h5 112
+
+                .card
+                    .top
+                        .left
+                            img(src="./images/ETH.png", alt="eth")
+                            h2 BTC
+                        img.right(src="./images/master_card.png", alt="master card")
+                    .middle
+                        h1 $95,623
+                        .chip
+                            img(src="./images/card_chip.png", alt="card chip")
+                    .bottom
+                        .left
+                            small Card Holder
+                            h5 John Doe
+                        .right
+                            .expiry
+                                small Expiry
+                                h5 08/23
+                            .cvv
+                                small CVV
+                                h5 112
+
+                .card
+                    .top
+                        .left
+                            img(src="./images/BTC.png", alt="btc")
+                            h2 BTC
+                        img.right(src="./images/visa.png", alt="visa")
+                    .middle
+                        h1 $74,384
+                        .chip
+                            img(src="./images/card_chip.png", alt="card chip")
+                    .bottom
+                        .left
+                            small Card Holder
+                            h5 John Doe
+                        .right
+                            .expiry
+                                small Expiry
+                                h5 08/24
+                            .cvv
+                                small CVV
+                                h5 112
+
+            .monthly-report
+                .report
+                    h3 Income
+                    div
+                        details
+                            h1 $29,023
+                            h6.success +3.5%
+                        p.text-muted Compared to $26,938 last month
+
+                .report
+                    h3 Expenses
+                    div
+                        details
+                            h1 $9,005
+                            h6.danger -6.5%
+                        p.text-muted Compared to $11,938 last month
+
+                .report
+                    h3 Cashback
+                    div
+                        details
+                            h1 $4,7004
+                            h6.success +7.1%
+                        p.text-muted Compared to $3,938 last month
+
+                .report
+                    h3 Turnover
+                    div
+                        details
+                            h1 $118,900
+                            h6.success -17.8%
+                        p.text-muted Compared to $136,980 last month
+
+            .fast-payment
+                h2 Fast Payment
+                .badges
+                    .badge
+                        span.material-icons-sharp add
+                    .badge
+                        span.bg-primary
+                        div
+                            h5 Training
+                            h4 $50
+                    .badge
+                        span.bg-success
+                        div
+                            h5 Internet
+                            h4 $40
+                    .badge
+                        span.bg-primary
+                        div
+                            h5 Gas
+                            h4 $190
+                    .badge
+                        span.bg-primary
+                        div
+                            h5 Movies
+                            h4 $35
+                    .badge
+                        span.bg-primary
+                        div
+                            h5 Education
+                            h4 $999
+                    .badge
+                        span.bg-danger
+                        div
+                            h5 Electricity
+                            h4 $109
+                    .badge
+                        span.bg-success
+                        div
+                            h5 Food
+                            h4 $399
+
+            canvas#chart
+
+        section.right
+            .investments
+                .header
+                    h2 Investments
+                    a(href="#") More 
+                        span.material-icons-sharp chevron_right 
+
+                .investment
+                    img(src="./images/uniliver.png", alt="uniliver")
+                    h4 Uniliver
+                    .date-time
+                        p 7 Nov, 2021
+                        small.text-muted 9:14pm
+                    .bonds
+                        p 1402
+                        small.text-muted Bonds
+                    .amount
+                        h4 $20,033
+                        small.success +3.25%
+
+                .investment
+                    img(src="./images/tesla.png", alt="tesla")
+                    h4 Tesla
+                    .date-time
+                        p 7 Nov, 2021
+                        small.text-muted 9:14pm
+                    .bonds
+                        p 1402
+                        small.text-muted Bonds
+                    .amount
+                        h4 $20,033
+                        small.success +36.27%
+
+                .investment
+                    img(src="./images/monster.png", alt="monster")
+                    h4 Monster
+                    .date-time
+                        p 7 Nov, 2021
+                        small.text-muted 9:14pm
+                    .bonds
+                        p 1402
+                        small.text-muted Bonds
+                    .amount
+                        h4 $20,033
+                        small.success +6.27%
+
+                .investment
+                    img(src="./images/mcdonalds.png", alt="mcdonalds")
+                    h4 McDonalds
+                    .date-time
+                        p 7 Nov, 2021
+                        small.text-muted 9:14pm
+                    .bonds
+                        p 1402
+                        small.text-muted Bonds
+                    .amount
+                        h4 $20,033
+                        small.danger -4.27%
+
+            .recent-transactions
+                .header
+                    h2 Recent Transactions
+                    a(href="#") More
+                        span.material-icons-sharp chevron_right
+
+                .transaction
+                    .service
+                        .icon.bg-purple-light
+                            span.material-icons-sharp.purple headphones
+                        .details
+                            h4 Music
+                            p 20.11.2021
+                    .card-details
+                        .card.bg-danger
+                            img(src="./images/visa.png", alt="visa")
+                        .details 
+                            p *2757
+                            small.text-muted Credit Card
+                    h4 $20
+
+                .transaction
+                    .service
+                        .icon.bg-purple-light
+                            span.material-icons-sharp.purple shopping_bag
+                        .details
+                            h4 Shopping
+                            p 19.11.2021
+                    .card-details
+                        .card.bg-primary
+                            img(src="./images/visa.png", alt="visa")
+                        .details
+                            p *1920
+                            small.text-muted Credit Card
+                    h4 -$799
+
+                .transaction
+                    .service
+                        .icon.bg-success-light
+                            span.material-icons-sharp.success restaurant
+                        .details
+                            h4 Restaurant
+                            p 19.11.2021
+                    .card-details
+                        .card.bg-dark
+                            img(src="./images/master_card.png", alt="master card")
+                        .details 
+                            p *8273
+                            small.text-muted Master Card
+                    h4 -$50
+
+                .transaction
+                    .service
+                        .icon.bg-danger-light
+                            span.material-icons-sharp.danger sports_esports
+                        .details
+                            h4 Games
+                            p 15.11.2021
+                    .card-details
+                        .card.bg-danger
+                            img(src="./images/visa.png", alt="visa")
+                        .details 
+                            p *2757
+                            small.text-muted Credit Card
+                    h4 -$44
+
+                .transaction
+                    .service
+                        .icon.bg-danger-light
+                            span.material-icons-sharp.danger medication
+                        .details
+                            h4 Pharmacy
+                            p 15.11.2021
+                    .card-details
+                        .card.bg-primary
+                            img(src="./images/visa.png", alt="visa")
+                        .details 
+                            p *1920
+                            small.text-muted Credit Card
+                    h4 -$30
+
+                .transaction
+                    .service
+                        .icon.bg-success-light
+                            span.material-icons-sharp.success fitness_center
+                        .details
+                            h4 Fitness
+                            p 12.11.2021
+                    .card-details
+                        .card.bg-dark
+                            img(src="./images/master_card.png", alt="master card")
+                        .details 
+                            p *8273
+                            small.text-muted Credit Card
+                    h4 -$45
